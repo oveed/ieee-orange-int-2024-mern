@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 
-// components
 import ItemDetails from "../components/ItemDetails";
 import ItemForm from "../components/ItemForm";
 
