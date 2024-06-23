@@ -1,4 +1,5 @@
 import React, { createContext, useReducer } from "react";
+import { useState } from "react";
 
 export const ItemsContext = createContext();
 
@@ -23,7 +24,7 @@ export const itemsReducer = (state, action) => {
 
 export const ItemsContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(itemsReducer, {
-    items: [], // Initialize to an empty array
+    items: [],
   });
 
   return (
